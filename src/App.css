@@ -28,6 +28,7 @@ header {
     justify-content: center;
 
     button {
+      cursor: pointer;
       max-width: 45.9rem;
       border-radius: 10px;
       a {
@@ -59,25 +60,124 @@ header {
   }
 }
 
-main{
+main {
+  .mainObjs {
     padding: 4rem 1.6rem;
     background: #7503a6;
+  }
 
-    .titleMain{
-        color: #FEFEFE;
-        font-size: 6rem;
-        font-family: var(--font-primary-monserrat);
-        font-weight: 700;
-        margin-bottom: 2rem;
+  .titleMain {
+    color: #fefefe;
+    font-size: 6rem;
+    font-family: var(--font-primary-monserrat);
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+
+  .divObjs {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .divMissao {
+    grid-column: span 2;
+  }
+
+  .divMissao,
+  .divValores,
+  .divVisao {
+    background: #fefefe;
+    border-radius: 10px;
+    padding: 1.6rem 2rem;
+
+    h3 {
+      font-family: var(--font-primary-monserrat);
+      font-weight: 700;
+      font-size: 3rem;
+      text-align: center;
+      color: #7503a6;
     }
 
-
-
-    .divMissao,
-    .divValores,
-    .divVisao {
-        background: #FEFEFE;
+    p {
+      font-family: var(--font-secondary-opensans);
+      font-weight: 400;
+      font-size: 2.5rem;
     }
-        
-    
+  }
+
+  .divDiferenciais {
+    background: #57a40a;
+    padding-top: 2rem;
+    padding: 4rem 1.6rem;
+
+    h3 {
+      font-family: var(--font-primary-monserrat);
+      font-weight: 700;
+      font-size: 6rem;
+      color: #fefefe;
+      margin-bottom: 2rem;
+    }
+    .tresdivs {
+      display: flex;
+      justify-content: center;
+      gap: 1.8rem;
+    }
+
+    .divUm,
+    .divDois,
+    .divTres {
+      background: #fefefe;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      padding: 0 2rem;
+      text-align: center;
+
+      img {
+        margin: 0 auto;
+      }
+      p {
+        font-size: 2.5rem;
+        font-family: var(--font-secondary-opensans);
+        font-weight: 400;
+      }
+    }
+  }
+
+  .perguntas {
+    padding: 0 3rem;
+    margin-top: 2.6rem;
+    h3 {
+      font-family: var(--font-primary-monserrat);
+      font-weight: 700;
+      font-size: 6.8rem;
+      color: #0357a0;
+    }
+
+    .divDrops {
+      margin-top: 5.8rem;
+      display: flex;
+      gap: 4.9rem;
+      /* display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 3.2rem; */
+      margin-bottom: 12.7rem;
+
+      .campo1 {
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+      }
+    }
+  }
+}
+
+.listaDrop {
+  margin-top: 1rem;
+  padding-left: 2rem;
 }
