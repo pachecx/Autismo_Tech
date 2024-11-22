@@ -1,0 +1,83 @@
+header {
+  padding: 1.6rem;
+  .divTextImg {
+    display: flex;
+    align-items: center;
+
+    .divText {
+      max-width: 81.5rem;
+      h2 {
+        color: #0357a0;
+        font-size: 6.8rem;
+        font-weight: 700;
+        font-family: var(--font-primary-monserrat);
+      }
+
+      p {
+        font-size: 2.5rem;
+        font-family: var(--font-secondary-opensans);
+        font-weight: 400;
+      }
+    }
+  }
+
+  .headerBtns {
+    margin-top: 4.4rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+
+    button {
+      max-width: 45.9rem;
+      border-radius: 10px;
+      a {
+        font-size: 3rem;
+        font-family: var(--font-primary-monserrat);
+        font-weight: 600;
+      }
+    }
+  }
+
+  .headerBtns button:first-child {
+    border: 5px solid #7503a6;
+    background: #7503a6;
+    padding: 3.5rem 5.6rem;
+    a {
+      color: #fefefe;
+      white-space: nowrap;
+    }
+  }
+
+  .headerBtns button:last-child {
+    border: 5px solid #7503a6;
+    padding: 3.5rem 9.5rem;
+
+    a {
+      color: #7503a6;
+      white-space: nowrap;
+    }
+  }
+}
+
+main{
+    padding: 4rem 1.6rem;
+    background: #7503a6;
+
+    .titleMain{
+        color: #FEFEFE;
+        font-size: 6rem;
+        font-family: var(--font-primary-monserrat);
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+
+
+
+    .divMissao,
+    .divValores,
+    .divVisao {
+        background: #FEFEFE;
+    }
+        
+    
+}

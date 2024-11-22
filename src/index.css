@@ -6,6 +6,9 @@
 
 :root{
   font-size: 62.5%;
+
+  --font-primary-monserrat: 'Montserrat', sans-serif;
+  --font-secondary-opensans: 'Open Sans', sans-serif;
 }
 
 body{
