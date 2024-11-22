@@ -1,42 +1,50 @@
 import React from 'react'
 import './style.css'
+import { Link } from 'react-router-dom'
+import imgLogoNav from '../../assets/logoNav.svg'
 
 const NavBar = () => {
   return (
-    <div>
+    <div className='divNav'>
+      <img src={imgLogoNav} alt='logo barra da barra de navegação'/>
     <nav>
-      <ol>
+      <ul>
         <li>
-          <a>
+          <Link to={'/'}>
             home
-          </a>
+          </Link>
         </li>
         <li>
-          <a>
+          <Link to={''}>
           Sobre Nós
-          </a>
+          </Link>
         </li>
         <li>
-          <a>
+          <Link to={''}>
           Benefícios
-          </a>
+          </Link>
         </li>
         <li>
-          <a>
+          <Link to={'/certificacao'}>
           Certificação
-          </a>
+          </Link>
         </li>
         <li>
-          <a>
+          <Link to={''}>
+          Selo
+          </Link>
+        </li>
+        <li>
+          <Link to={''}>
           Auditores
-          </a>
+          </Link>
         </li>
         <li>
-          <a>
+          <Link to={''}>
           Checklist
-          </a>
+          </Link>
         </li>
-      </ol>
+      </ul>
       </nav>
     </div>
   )

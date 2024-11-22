@@ -14,7 +14,7 @@ import "./style.css";
 const Certificacao = () => {
   return (
     <>
-      <header>
+      <header className="headerCertificacao">
         <div className="divHead">
           <img src={imgClound} alt="imagem de servidores" />
           <div className="headerTexts">
