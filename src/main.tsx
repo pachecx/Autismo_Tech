@@ -4,6 +4,8 @@ import './index.css'
 import App from './App.tsx'
 import Certificacao from './pages/Certificacao/index.tsx'
 import Base from './Base.tsx'
+import Sobre from './pages/Sobre/index.tsx'
+import Auditores from './pages/auditores/index.tsx'
 
 import {
   createBrowserRouter,
@@ -21,7 +23,15 @@ const router = createBrowserRouter([
       {
         path: "/certificacao",
         element: <Certificacao />
-      }
+      },
+      {
+        path: "/sobre",
+        element: <Sobre/>,
+      },
+      {
+        path: "/auditores",
+        element: <Auditores/>,
+      },
     ]
   }
  

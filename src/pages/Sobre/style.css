@@ -1,0 +1,63 @@
+.containersobre {
+  max-width: 90%;
+ 
+}
+.cointainerp{
+    margin-left: 1.6rem;
+    max-width: 94.6rem;
+}
+
+.psobre {
+  font-family: Montserrat;
+  font-size: 6.8rem;
+  font-weight: 700;
+  line-height: 7.5rem;
+  text-align: left;
+  color: #0357a0;
+}
+.containersecundario{
+    display: flex;
+    
+    
+}
+.texto1{
+    font-family: Open sans;
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 3.8rem;
+    text-align: justify;
+    margin-top: 9.4rem;
+    margin-left: 1.6rem;
+    max-width: 83.0rem;
+}
+.containerterceiro{
+    max-height: 28.3rem;
+    background-color: #0357A0;
+    text-align: center;
+    border: 1px solid #0357A0;
+}
+.containerp{
+  margin-top: 6.0rem;
+  margin-bottom: 2.8rem;
+}
+.textobutao{
+    color: white;
+    font-size: 3rem;
+    
+}
+.containerbutao{
+    margin-bottom: 6rem;
+}
+.butao{
+border-radius: 1.0rem;
+width: 45.9rem;
+height: 9.7rem;
+color: white;
+background-color: #7503A6;
+font-family: Montserrat;
+font-size: 3.0rem;
+font-weight: 400;
+line-height: 30px;
+padding: 0.35rem 0.55rem;
+border: 1px solid #7503A6;
+}
