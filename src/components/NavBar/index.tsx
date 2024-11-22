@@ -11,7 +11,7 @@ const NavBar = () => {
       <ul>
         <li>
           <Link to={'/'}>
-            home
+            Home
           </Link>
         </li>
         <li>

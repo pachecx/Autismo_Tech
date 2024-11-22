@@ -1,0 +1,70 @@
+.geralFooter {
+  padding-top: 9.4rem;
+}
+
+.imgEtextoFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.divTextoFooter {
+  h4 {
+    font-family: var(--font-primary-monserrat);
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+
+  p {
+    font-family: var(--font-primary-monserrat);
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+}
+
+.divTextoFooter p:nth-child(2){
+    margin-top: 4.8rem;
+}
+
+.divTextoFooter p:nth-child(3){
+    margin: 1.6rem 0;
+}
+
+.divCardFooter {
+  background: #dc7b04;
+  padding: 3rem 5.3rem 5.3rem;
+  border-radius: 10px;
+
+  h3 {
+    font-family: var(--font-primary-monserrat);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fefefe;
+    margin-bottom: 3.2rem;
+  }
+
+  .logoRedes {
+    display: flex;
+    gap: 3.2rem;
+
+    img{
+        cursor: pointer;
+    }
+  }
+}
+
+.termosFooter {
+  margin-top: 9.4rem;
+  padding: 1.5rem 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0357a0;
+
+  p {
+    font-family: var(--font-primary-monserrat);
+    font-weight: 400;
+    font-size: 1.8rem;
+    color: #fefefe;
+  }
+}
