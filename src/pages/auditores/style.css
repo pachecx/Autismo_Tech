@@ -23,13 +23,19 @@
   }
   
   .titulo-frame {
-    font-size: 2.5rem;
-    margin-top: 2rem;
-    color: #fff;
+    font-family: var(--font-primary-monserrat);
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: left;
+    color: white;
+    padding-top: 4rem ;
+    padding-bottom: 2.4rem;
   }
-  
+ 
   .titulo-auditor {
-    font-size: 3rem;
+    font-family: var(--font-primary-monserrat);
+    font-size: 5rem;
     margin: 3rem 0;
   }
   
@@ -72,12 +78,13 @@
     background-color: #57a40a;
     padding: 2rem;
     text-align: center;
+    margin-top: 6.6rem;
   }
   
   .div-frame {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 7.7rem;
     margin-top: 2rem;
   }
   
@@ -92,6 +99,7 @@
   .div-sobre {
     background-color: #0357a0;
     padding: 2rem 0;
+    height: 29rem;
   }
   
   /* Imagens */
@@ -108,11 +116,10 @@
   line-height: 4rem;
   color: #0357a0;
   width: 695px;
- height: 80px;
- gap: 0px;
- opacity: 0px;
-
-
+  height: 80px;
+  gap: 0px;
+  opacity: 0px;
+  
   }
   .butfazer{
    width: 69.5rem;
@@ -127,10 +134,15 @@
    font-size: 36px;
    font-weight: 600;
    line-height: 36px;
+   margin-top: 2.8rem;
    
 
 
   }
   .divfazer{
-    margin-left: 1.7rem;
+    display: flex;
+   align-items: center;
+   padding: 7.3rem 13.6rem;
+   justify-content: space-between;
+   
   }

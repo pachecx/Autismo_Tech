@@ -1,4 +1,22 @@
-nav ol{
+.divNav{
+    background: #0357A0;
     display: flex;
-    gap: 1rem;
+    align-items: center;
+    padding: 2.6rem 6rem;
+    gap: 2.2rem;
+}
+
+nav ul{
+    display: flex;
+    gap: 2.2rem;    
+    list-style: none;
+
+    a{
+        font-family: var(--font-primary-monserrat);
+        font-weight: 500;
+        font-size: 3.2rem;
+        color: #FEFEFE;
+        text-decoration: none;
+        list-style: none;
+    }
 }

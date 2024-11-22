@@ -4,10 +4,11 @@ import png from '../../assets/Group 2.png';
 import frame1 from '../../assets/Frame 3.png';
 import frame2 from '../../assets/Frame 2.png';
 import frame3 from '../../assets/Frame 1.png';
-import auditor1 from '../../assets/auditor1.png';
-import auditor2 from '../../assets/auditor2.png';
-import auditor3 from '../../assets/auditor3.png';
-import auditor4 from '../../assets/auditor4.png';
+import auditor1 from '../../assets/auditor 1.2.png';
+import auditor2 from '../../assets/auditor3.2.png';
+import auditor3 from '../../assets/auditor4.2.png';
+import auditor4 from '../../assets/auditorespecial.png';
+import auditor5 from '../../assets/Group 3.png'
 
 const Auditores = () => {
   return (
@@ -57,13 +58,13 @@ const Auditores = () => {
             <img src={auditor1} alt="Auditor 1" />
           </div>
           <div>
-            <img src={auditor2} alt="Auditor 2" />
+            <img src={auditor4} alt="Auditor 2" />
           </div>
           <div>
-            <img src={auditor3} alt="Auditor 3" />
+            <img src={auditor2} alt="Auditor 3" />
           </div>
           <div>
-            <img src={auditor4} alt="Auditor 4" />
+            <img src={auditor3} alt="Auditor 4" />
           </div>
         </div>
       </div>
@@ -78,12 +79,12 @@ const Auditores = () => {
         </p>
       </div>
       <div className='divfazer'>
-        <div>
+        <div className=''>
             <p className='pfazer'>Quer fazer parte da nossa equipe de consultores?</p>
             <button className='butfazer'>Seja um auditor!</button>
         </div>
         <div>
-            <img src="" alt="" />
+            <img src={auditor5} alt="" />
         </div>
       </div>
     </div>
