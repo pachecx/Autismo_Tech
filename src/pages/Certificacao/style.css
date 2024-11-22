@@ -1,0 +1,190 @@
+header {
+  background: #0357a0;
+  padding-bottom: 6.8rem;
+  .divHead {
+    display: flex;
+    align-items: center;
+    gap: 5.9rem;
+
+    img {
+      max-width: 57.7rem;
+      max-height: 40.3rem;
+    }
+    .headerTexts {
+      h1 {
+        font-family: var(--font-primary-monserrat);
+        font-weight: 700;
+        font-size: 6.8rem;
+        color: #fefefe;
+        text-align: right;
+      }
+
+      p {
+        font-family: var(--font-secondary-opensans);
+        font-weight: 400;
+        font-size: 2.5rem;
+        color: #fefefe;
+        padding-left: 8.5rem;
+      }
+    }
+  }
+}
+
+main {
+  h2 {
+    margin: 5rem 0 6rem;
+    font-family: var(--font-primary-monserrat);
+    font-weight: 700;
+    font-size: 6.8rem;
+    color: #0357a0;
+  }
+
+  .etapasDiv {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.6rem;
+
+    .etapa {
+      max-width: 57.7rem;
+      margin-bottom: 7.7rem;
+
+      img {
+        margin-left: 15%;
+        margin-bottom: 5.8rem;
+      }
+
+      .imgDivs {
+        position: relative;
+
+        .line1 {
+          z-index: -1;
+          position: absolute;
+          left: 32%;
+          bottom: -35%;
+          width: 1000px;
+        }
+      }
+
+      h3 {
+        font-family: var(--font-primary-monserrat);
+        font-weight: 700;
+        font-size: 4rem;
+        color: #0357a0;
+        text-align: center;
+        margin-bottom: 1.6rem;
+      }
+
+      p {
+        font-family: var(--font-primary-monserrat);
+        font-size: 2.4rem;
+        font-weight: 500;
+        color: #1d1d1b;
+      }
+    }
+
+    .lado2 {
+      padding-top: 13rem;
+
+      .etapa .imgDivs {
+        padding-left: 20rem;
+
+        .line2 {
+          position: absolute;
+          left: -72rem;
+          bottom: -32rem;
+          width: 900px;
+          z-index: -1;
+          transform: rotate(2deg);
+        }
+
+        img {
+        }
+      }
+    }
+  }
+
+  .SobreCertificado {
+    background: #0357a0;
+    p {
+      font-family: var(--font-secondary-opensans);
+      font-weight: 700;
+      font-size: 2.1rem;
+      color: #fefefe;
+      padding: 5.9rem 6.7rem;
+      text-align: justify;
+    }
+  }
+
+  .certificado {
+    display: flex;
+    align-items: center;
+    gap: 20.9rem;
+    justify-content: center;
+    padding: 7.4rem 11.8rem 6.4rem;
+
+    img {
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    }
+
+    .certificadoTexto {
+      h3 {
+        font-family: var(--font-primary-monserrat);
+        font-weight: 600;
+        font-size: 3rem;
+        color: #0357a0;
+        margin-bottom: 1.6rem;
+      }
+
+      ol .listaCertificado {
+        display: flex;
+        align-items: center;
+        gap: 1.4rem;
+        margin-bottom: 1.1rem;
+
+        img {
+          height: 2.4rem;
+          width: 2.5rem;
+        }
+
+        p {
+          font-family: var(--font-primary-monserrat);
+          font-weight: 400;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  .SolicitarAuditoria {
+    background: #dc7b04;
+    display: flex;
+    align-items: center;
+    padding: 5rem 9rem 5rem 13.5rem;
+
+    .textSolicitar{
+      h3 {
+        font-family: var(--font-primary-monserrat);
+        font-size: 4rem;
+        font-weight: 700;
+        color: #fefefe;
+        margin-bottom: 8.4rem;
+      }
+  
+      button{
+        background: #7503A6;
+        padding: 3.3rem 5.6rem;
+        border: none;
+        border-radius: 10px;
+        max-height: 9.7rem;
+        a{
+          font-family: var(--font-primary-monserrat);
+          font-size: 3rem;
+          font-weight: 600;
+          color: #FEFEFE;
+        }
+      }
+    }
+    }
+
+    
+}
