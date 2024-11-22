@@ -1,0 +1,35 @@
+.title{
+    font-family: Montserrat;
+    font-size: 6.8rem;
+    font-weight: 700;
+    line-height: 74px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #0357A0;
+    margin-left: 1.6rem;
+
+}
+.containertitulo{
+    display: flex;
+    border: 1px solid red;
+}
+.divtitulo{
+ max-width: 81.5rem;
+ margin-right: 13.4rem;
+}
+.ptitle{
+    font-family: Open Sans;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 33px;
+    text-align: justified;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    max-width: 81.5rem;
+    margin-left: 1.6rem;
+    color: #1D1D1B;
+
+}
+.containerimg{
+
+}
