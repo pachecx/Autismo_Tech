@@ -1,0 +1,104 @@
+.SerAuditadoGeral {
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 1.6rem;
+}
+
+.textoReceberAuditoria {
+  max-width: 69.6rem;
+  .tituloSerAutitado {
+    font-family: var(--font-primary-monserrat);
+    font-weight: 700;
+    font-size: 6.4rem;
+    color: #0357a0;
+  }
+
+  .divBtnSelo {
+    background: #d91424;
+    max-width: 51.1rem;
+    max-height: 10.8rem;
+    border-radius: 10px;
+    position: relative;
+    padding: 2.4rem 0;
+    margin: 5.2rem auto;
+
+    .textoBtnSelo {
+      font-family: var(--font-secondary-opensans);
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: #fefefe;
+      text-align: center;
+    }
+
+    .imgSeloBtn {
+      height: 19.7rem;
+      width: 19.7rem;
+      position: absolute;
+      top: -13rem;
+      right: -9rem;
+    }
+  }
+
+  .textoSobreFormulario {
+    font-family: var(--font-secondary-opensans);
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: #1d1d1b;
+    text-align: justify;
+  }
+}
+
+.geralFormSerAuditado {
+  .formSerAuditado {
+    background: #57a40a;
+    border-radius: 3rem;
+    padding: 2.7rem 3.1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .TituloformSerAuditado {
+      font-family: var(--font-secondary-opensans);
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #1d1d1b;
+      text-align: center;
+    }
+
+    .divInputsSerAuditado {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      .LabelSerAuditado {
+        font-family: var(--font-secondary-opensans);
+        font-size: 2.1rem;
+        font-weight: 600;
+        color: #1d1d1b;
+      }
+
+      .inputSerAuditado {
+        border-radius: 10px;
+        height: 4.4rem;
+        width: 51.7rem;
+        border: none;
+        padding-left: 5px;
+      }
+    }
+  }
+
+  .BtnSerAuditado {
+    background: #7503a6;
+    max-width: 34.1rem;
+    color: #fefefe;
+
+    font-family: var(--font-primary-monserrat);
+    font-size: 2.1rem;
+    font-weight: 600;
+    border: none;
+    display: block;
+    margin: 0 auto;
+    padding: 2.5rem 7.4rem;
+    border-radius: 10px;
+  }
+}
