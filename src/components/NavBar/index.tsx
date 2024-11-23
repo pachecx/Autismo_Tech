@@ -20,7 +20,7 @@ const NavBar = () => {
           </Link>
         </li>
         <li>
-          <Link to={''}>
+          <Link to={'/beneficios'}>
           Benefícios
           </Link>
         </li>
