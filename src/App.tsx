@@ -4,6 +4,7 @@ import img1 from "./assets/Checklist-1.svg";
 import img2 from "./assets/extraction-cuate.svg";
 import img3 from "./assets/world-cuate.svg";
 import Dropdown from "./components/Drop";
+import { Link } from "react-router-dom";
 
 function App() {
   return (
@@ -11,23 +12,23 @@ function App() {
       <header>
         <div className="divTextImg">
           <div className="divText">
-            <h2>
+            <h2 className="TituloHeader">
               Quebre barreiras digitais: torne seu site acessível para todos!
             </h2>
-            <p>
+            <p className="TextoHome">
               Auditorias detalhadas, certificações reconhecidas globalmente e
               consultores PCDs garantindo inclusão real.
             </p>
           </div>
-          <img src={img} />
+          <img className="imgHomeHeader" src={img} />
         </div>
 
         <div className="headerBtns">
-          <button>
-            <a>Solicite uma auditoria!</a>
+          <button className="btnSolicitarHome">
+            <Link className="linkHomeHeader" to={""}>Solicite uma auditoria!</Link>
           </button>
-          <button>
-            <a>Checklist Gratuito</a>
+          <button className="btnCheckHome">
+            <Link className="linkHomeHeader" to={""}>Checklist Gratuito</Link>
           </button>
         </div>
       </header>
@@ -37,8 +38,8 @@ function App() {
           <h2 className="titleMain">Diretrizes</h2>
           <div className="divObjs">
             <div className="divMissao">
-              <h3>Missão</h3>
-              <p>
+              <h3 className="TitleDiretrizes">Missão</h3>
+              <p className="textoDiretrizes">
                 Promover a inclusão digital e a acessibilidade universal,
                 certificando plataformas para que sejam mais inclusivas e
                 garantindo que pessoas com deficiência tenham acesso igualitário
@@ -50,8 +51,8 @@ function App() {
             </div>
 
             <div className="divVisao">
-              <h3>Visão</h3>
-              <p>
+              <h3  className="TitleDiretrizes">Visão</h3>
+              <p className="textoDiretrizes">
                 Ser uma referência global em acessibilidade digital, promovendo
                 mudanças significativas que impactem positivamente a vida de
                 milhões de usuários e reforcem o compromisso das empresas com a
@@ -60,8 +61,8 @@ function App() {
             </div>
 
             <div className="divValores">
-              <h3>Valores</h3>
-              <p>
+              <h3 className="TitleDiretrizes">Valores</h3>
+              <p className="textoDiretrizes">
                 Promover a inclusão digital e a acessibilidade universal,
                 certificando plataformas para que sejam mais inclusivas e
                 garantindo que pessoas com deficiência tenham acesso igualitário
@@ -75,25 +76,25 @@ function App() {
         </div>
 
         <div className="divDiferenciais">
-          <h3>Diferenciais</h3>
+          <h3 className="tituloDiferenciais">Diferenciais</h3>
           <div className="tresdivs">
             <div className="divUm">
-              <img src={img1} />
-              <p>Auditorias detalhadas e baseadas em padrões como WCAG.</p>
+              <img className="imgDife" src={img1} />
+              <p className="TextoDif">Auditorias detalhadas e baseadas em padrões como WCAG.</p>
             </div>
             <div className="divDois">
-              <img src={img3} />
-              <p>Envolvimento direto de consultores PCDs.</p>
+              <img className="imgDife"  src={img3} />
+              <p className="TextoDif">Envolvimento direto de consultores PCDs.</p>
             </div>
             <div className="divTres">
-              <img src={img2} />
-              <p>Relatórios claros e planos de ação.</p>
+              <img className="imgDife"  src={img2} />
+              <p className="TextoDif">Relatórios claros e planos de ação.</p>
             </div>
           </div>
         </div>
 
         <div className="perguntas">
-          <h3>Perguntas Frequentes</h3>
+          <h3 className="TitulosPerguntas">Perguntas Frequentes</h3>
           <div className="divDrops">
             <div className="campo1">
               <Dropdown

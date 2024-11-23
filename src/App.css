@@ -6,14 +6,14 @@ header {
 
     .divText {
       max-width: 81.5rem;
-      h2 {
+      .TituloHeader {
         color: #0357a0;
         font-size: 6.8rem;
         font-weight: 700;
         font-family: var(--font-primary-monserrat);
       }
 
-      p {
+      .TextoHome {
         font-size: 2.5rem;
         font-family: var(--font-secondary-opensans);
         font-weight: 400;
@@ -43,9 +43,10 @@ header {
     border: 5px solid #7503a6;
     background: #7503a6;
     padding: 3.5rem 5.6rem;
-    a {
+    .linkHomeHeader {
       color: #fefefe;
       white-space: nowrap;
+      text-decoration: none;
     }
   }
 
@@ -53,9 +54,10 @@ header {
     border: 5px solid #7503a6;
     padding: 3.5rem 9.5rem;
 
-    a {
+    .linkHomeHeader {
       color: #7503a6;
       white-space: nowrap;
+      text-decoration: none;
     }
   }
 }
@@ -92,7 +94,7 @@ main {
     border-radius: 10px;
     padding: 1.6rem 2rem;
 
-    h3 {
+    .TitleDiretrizes {
       font-family: var(--font-primary-monserrat);
       font-weight: 700;
       font-size: 3rem;
@@ -100,7 +102,7 @@ main {
       color: #7503a6;
     }
 
-    p {
+    .textoDiretrizes {
       font-family: var(--font-secondary-opensans);
       font-weight: 400;
       font-size: 2.5rem;
@@ -112,7 +114,7 @@ main {
     padding-top: 2rem;
     padding: 4rem 1.6rem;
 
-    h3 {
+    .tituloDiferenciais {
       font-family: var(--font-primary-monserrat);
       font-weight: 700;
       font-size: 6rem;
@@ -138,10 +140,10 @@ main {
       padding: 0 2rem;
       text-align: center;
 
-      img {
+      .imgDife {
         margin: 0 auto;
       }
-      p {
+      .TextoDif {
         font-size: 2.5rem;
         font-family: var(--font-secondary-opensans);
         font-weight: 400;
@@ -152,7 +154,7 @@ main {
   .perguntas {
     padding: 0 3rem;
     margin-top: 2.6rem;
-    h3 {
+    .TitulosPerguntas {
       font-family: var(--font-primary-monserrat);
       font-weight: 700;
       font-size: 6.8rem;

@@ -1,0 +1,139 @@
+.divCheckTextoImg {
+  display: flex;
+  padding: 4rem 1.6rem;
+}
+.DivTextoCheck {
+  padding-right: 20rem;
+  .TituloCheckHeader {
+    font-family: var(--font-primary-monserrat);
+    font-weight: 700;
+    font-size: 6.8rem;
+    color: #0357a0;
+  }
+
+  .TextoHeaderCheck {
+    font-family: var(--font-secondary-opensans);
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: #1d1d1b;
+  }
+}
+
+.checkListInfo {
+  background: #0357a0;
+  padding: 9.6rem 26.9rem;
+  .textoCheckList {
+    font-family: var(--font-secondary-opensans);
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: #fefefe;
+  }
+
+  .spanNegrito {
+    font-weight: 700;
+  }
+}
+
+form .Nav-Check-Vermelho,
+.Nav-Check-roxo,
+.Nav-Check-azul {
+  margin: 4.8rem 0;
+
+  background: #d91424;
+  padding: 3.2rem 8.8rem 3.2rem 13.6rem;
+
+  .titulo-Checklist-vermelho,
+  .titulo-Checklist-roxo,
+  .titulo-Checklist-azul {
+    font-family: var(--font-secondary-opensans);
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: #fefefe;
+    border-bottom: 1px solid #fefefe;
+    padding-bottom: 2.4rem;
+    width: 90%;
+  }
+
+  .divInputs {
+    .TextoInputForm {
+      font-family: var(--font-secondary-opensans);
+      font-weight: 700;
+      font-size: 2.5rem;
+      color: #fefefe;
+      margin-bottom: 2rem;
+      margin-top: 4.4rem;
+    }
+  }
+
+  .options {
+    display: flex;
+    gap: 4.4rem;
+
+    .LabelInput {
+      font-family: var(--font-secondary-opensans);
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: #fefefe;
+    }
+
+    input[type="radio"] {
+      -webkit-appearance: none; /* Para navegadores baseados em WebKit */
+      -moz-appearance: none; /* Para Firefox */
+      appearance: none; /* Para navegadores modernos */
+      width: 24px;
+      height: 24px;
+      border: 2px solid #f9f9f9; /* Cor da borda */
+      border-radius: 4px; /* Bordas levemente arredondadas (opcional) */
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 8px;
+      cursor: pointer;
+      background: #f9f9f9;
+      position: relative; /* Necessário para o pseudo-elemento */
+    }
+
+    /* Quando marcado, muda a aparência do botão */
+    input[type="radio"]:checked {
+      background-color: #4caf50; /* Fundo verde */
+      border-color: #4caf50; /* Cor da borda */
+    }
+
+    /* Adiciona o "V" branco quando marcado */
+    input[type="radio"]:checked::after {
+      content: "✔"; /* Caractere de "V" */
+      color: white; /* Cor do "V" */
+      font-size: 18px; /* Tamanho do "V" */
+      font-weight: bold; /* Peso do "V" */
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); /* Centraliza o "V" */
+    }
+  }
+}
+
+form .Nav-Check-roxo {
+  background: #7503a6;
+}
+
+form .Nav-Check-azul {
+  background: #0357a0;
+}
+
+form .btnSubmit {
+  border: none;
+  padding: 3.3rem 10.2rem;
+  border-radius: 10px;
+  background: #7503a6;
+  font-family: var(--font-primary-monserrat);
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fefefe;
+  display: block;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+
+
+

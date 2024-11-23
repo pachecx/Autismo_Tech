@@ -6,12 +6,12 @@
     align-items: center;
     gap: 5.9rem;
 
-    img {
+    .imgHeadCertificacao {
       max-width: 57.7rem;
       max-height: 40.3rem;
     }
     .headerTexts {
-      h1 {
+      .tituloHeader {
         font-family: var(--font-primary-monserrat);
         font-weight: 700;
         font-size: 6.8rem;
@@ -19,7 +19,7 @@
         text-align: right;
       }
 
-      p {
+      .textHeader {
         font-family: var(--font-secondary-opensans);
         font-weight: 400;
         font-size: 2.5rem;
@@ -31,7 +31,7 @@
 }
 
 main {
-  h2 {
+  .tituloMainH2 {
     margin: 5rem 0 6rem;
     font-family: var(--font-primary-monserrat);
     font-weight: 700;
@@ -60,12 +60,12 @@ main {
           z-index: -1;
           position: absolute;
           left: 32%;
-          bottom: -35%;
-          width: 1000px;
+          bottom: -25%;
+          width: 900px;
         }
       }
 
-      h3 {
+      .h3Tutulo {
         font-family: var(--font-primary-monserrat);
         font-weight: 700;
         font-size: 4rem;
@@ -74,7 +74,7 @@ main {
         margin-bottom: 1.6rem;
       }
 
-      p {
+      .textoEtapas {
         font-family: var(--font-primary-monserrat);
         font-size: 2.4rem;
         font-weight: 500;
@@ -96,16 +96,13 @@ main {
           z-index: -1;
           transform: rotate(2deg);
         }
-
-        img {
-        }
       }
     }
   }
 
   .SobreCertificado {
     background: #0357a0;
-    p {
+    .textoCertificado {
       font-family: var(--font-secondary-opensans);
       font-weight: 700;
       font-size: 2.1rem;
@@ -127,7 +124,7 @@ main {
     }
 
     .certificadoTexto {
-      h3 {
+      .TituloTextoCertificado {
         font-family: var(--font-primary-monserrat);
         font-weight: 600;
         font-size: 3rem;
@@ -141,12 +138,12 @@ main {
         gap: 1.4rem;
         margin-bottom: 1.1rem;
 
-        img {
+        .imgLista {
           height: 2.4rem;
           width: 2.5rem;
         }
 
-        p {
+        .TextoListaCertificado {
           font-family: var(--font-primary-monserrat);
           font-weight: 400;
           font-size: 2rem;
@@ -161,30 +158,29 @@ main {
     align-items: center;
     padding: 5rem 9rem 5rem 13.5rem;
 
-    .textSolicitar{
-      h3 {
+    .textSolicitar {
+      .tituloTextoSolicitar {
         font-family: var(--font-primary-monserrat);
         font-size: 4rem;
         font-weight: 700;
         color: #fefefe;
         margin-bottom: 8.4rem;
       }
-  
-      button{
-        background: #7503A6;
+
+      .btnSolicitar {
+        background: #7503a6;
         padding: 3.3rem 5.6rem;
         border: none;
         border-radius: 10px;
         max-height: 9.7rem;
-        a{
+        .solicitar {
           font-family: var(--font-primary-monserrat);
           font-size: 3rem;
           font-weight: 600;
-          color: #FEFEFE;
+          color: #fefefe;
+          text-decoration: none;
         }
       }
     }
-    }
-
-    
+  }
 }
