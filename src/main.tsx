@@ -6,6 +6,8 @@ import Certificacao from './pages/Certificacao/index.tsx'
 import Base from './Base.tsx'
 import Sobre from './pages/Sobre/index.tsx'
 import Auditores from './pages/auditores/index.tsx'
+import CheckList from './pages/CheckList/index.tsx'
+import FormularioCheckList from './pages/FormularioCheck/index.tsx'
 import Beneficios from './pages/beneficios/index.tsx'
 
 import {
@@ -32,6 +34,14 @@ const router = createBrowserRouter([
       {
         path: "/auditores",
         element: <Auditores/>,
+      },
+      {
+        path: "/checklist",
+        element: <CheckList/>,
+      },
+      {
+        path: "/formularioChecklist",
+        element: <FormularioCheckList/>,
       },
       {
         path: "/beneficios",

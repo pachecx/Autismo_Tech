@@ -40,7 +40,7 @@ const NavBar = () => {
           </Link>
         </li>
         <li>
-          <Link to={''}>
+          <Link to={'/checklist'}>
           Checklist
           </Link>
         </li>

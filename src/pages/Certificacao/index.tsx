@@ -6,20 +6,21 @@ import etapa1 from "../../assets/certificacao/img1.svg";
 import etapa2 from "../../assets/certificacao/img2.svg";
 import etapa3 from "../../assets/certificacao/img3.svg";
 import etapa4 from "../../assets/certificacao/img4.svg";
-import imgCertificado from '../../assets/certificacao/certificado.png'
+import imgCertificado from '../../assets/certificacao/certificadoCorrigido.png'
 import imgSolicitarAuditoria from '../../assets/certificacao/Frame.svg'
 import x from '../../assets/certificacao/x.svg'
 import "./style.css";
+import { Link } from "react-router-dom";
 
 const Certificacao = () => {
   return (
     <>
       <header className="headerCertificacao">
         <div className="divHead">
-          <img src={imgClound} alt="imagem de servidores" />
+          <img className="imgHeadCertificacao" src={imgClound} alt="imagem de servidores" />
           <div className="headerTexts">
-            <h1>Seu Caminho para a Certificação de Acessibilidade Digital</h1>
-            <p>
+            <h1 className="tituloHeader">Seu Caminho para a Certificação de Acessibilidade Digital</h1>
+            <p className="textHeader">
               Acreditamos que tornar sua plataforma digital acessível deve ser
               um processo simples e direto. Avaliação real feita por consultores
               PCDs, garantindo que a experiência seja verdadeiramente inclusiva!
@@ -28,7 +29,7 @@ const Certificacao = () => {
         </div>
       </header>
       <main>
-        <h2>Nossas etapas:</h2>
+        <h2 className="tituloMainH2">Nossas etapas:</h2>
         <div className="etapasDiv">
           <div className="lado1">
             <div className="etapa">
@@ -37,8 +38,8 @@ const Certificacao = () => {
                 <img src={etapa1} alt="etapa de processos" />
               </div>
               <div className="etapaText">
-                <h3>Aplicação</h3>
-                <p>
+                <h3 className="h3Tutulo">Aplicação</h3>
+                <p className="textoEtapas">
                   O primeiro passo é simples! Preencha nosso formulário com as
                   informações sobre sua empresa e o produto digital que deseja
                   auditar. Após a aplicação, nossa equipe entrará em contato
@@ -53,8 +54,8 @@ const Certificacao = () => {
                 <img src={etapa3} alt="etapa de processos" />
               </div>
               <div className="etapaText">
-                <h3>Relatório</h3>
-                <p>
+                <h3 className="h3Tutulo">Relatório</h3>
+                <p className="textoEtapas">
                   Com base na auditoria, preparamos um relatório completo que
                   destaca os pontos de conformidade. As áreas que precisam de
                   ajustes e também recomendações específicas para atingir os
@@ -71,8 +72,8 @@ const Certificacao = () => {
                 <img src={etapa2} alt="etapa de processos" />
               </div>
               <div className="etapaText">
-                <h3>Auditoria</h3>
-                <p>
+                <h3 className="h3Tutulo">Auditoria</h3>
+                <p className="textoEtapas">
                   Nossos auditores especializados realizaram uma análise
                   detalhada do seu produto digital. Avaliamos a conformidade com
                   as diretrizes WCAG, verificando aspectos como navegação,
@@ -86,8 +87,8 @@ const Certificacao = () => {
                 <img src={etapa4} alt="etapa de processos" />
               </div>
               <div className="etapaText">
-                <h3>Certificação</h3>
-                <p>
+                <h3 className="h3Tutulo">Certificação</h3>
+                <p className="textoEtapas">
                   Se o seu produto digital atingir acima de 90% dos critérios
                   analisados, você receberá um Certificado de Acessibilidade
                   Digital, que tem duração de 12 meses, atestando o seu
@@ -99,7 +100,7 @@ const Certificacao = () => {
         </div>
 
         <div className="SobreCertificado">
-          <p>
+          <p className="textoCertificado">
             O Certificado de Acessibilidade Digital é um reconhecimento oficial
             para empresas que demonstram excelência na inclusão digital. Ele
             comprova que sua plataforma está alinhada com as diretrizes WCAG
@@ -116,65 +117,65 @@ const Certificacao = () => {
         <img src={imgCertificado}/>
       </div>
       <div className="certificadoTexto">
-          <h3>Alguns dos critérios avaliados para a pontuação do certificado:</h3>
+          <h3 className="TituloTextoCertificado">Alguns dos critérios avaliados para a pontuação do certificado:</h3>
           <ol>
             <li className="listaCertificado">
-              <img src={x} alt="x"/> 
-              <p>
+              <img className="imgLista" src={x} alt="x"/> 
+              <p className="TextoListaCertificado">
               Estrutura clara e intuitiva das páginas.
               </p>
             </li>
             <li className="listaCertificado">
-              <img src={x} alt="x"/> 
-              <p>
+              <img className="imgLista" src={x} alt="x"/> 
+              <p className="TextoListaCertificado">
               Facilidade de uso em dispositivos móveis e desktops.
               </p>
             </li>
             <li className="listaCertificado">
-              <img src={x} alt="x"/> 
-              <p>
+              <img className="imgLista" src={x} alt="x"/> 
+              <p className="TextoListaCertificado">
               Disponibilidade de atalhos de teclado para navegação sem mouse.
               </p>
             </li>
             <li className="listaCertificado">
-              <img src={x} alt="x"/> 
-              <p>
+              <img className="imgLista" src={x} alt="x"/> 
+              <p className="TextoListaCertificado">
               Contraste de cores entre texto e fundo.
               </p>
             </li>
             <li className="listaCertificado">
-              <img src={x} alt="x"/> 
-              <p>
+              <img className="imgLista" src={x} alt="x"/> 
+              <p className="TextoListaCertificado">
               Tamanhos de fonte ajustáveis e leitura facilitada.
               </p>
             </li>
             <li className="listaCertificado">
-              <img src={x} alt="x"/> 
-              <p>
+              <img className="imgLista" src={x} alt="x"/> 
+              <p className="TextoListaCertificado">
               Funcionamento adequado com leitores de tela.
               </p>
             </li>
             <li className="listaCertificado">
-              <img src={x} alt="x"/> 
-              <p>
+              <img className="imgLista" src={x} alt="x"/> 
+              <p className="TextoListaCertificado">
               Campos de formulário claramente rotulados e acessíveis.
               </p>
             </li>
             <li className="listaCertificado">
-              <img src={x} alt="x"/> 
-              <p>
+              <img className="imgLista" src={x} alt="x"/> 
+              <p className="TextoListaCertificado">
               Conteúdo acessível para usuários que utilizam comandos de voz.
               </p>
             </li>
             <li className="listaCertificado">
-              <img src={x} alt="x"/> 
-              <p>
+              <img className="imgLista" src={x} alt="x"/> 
+              <p className="TextoListaCertificado">
               Legendas em vídeos e transcrições para conteúdos de áudio.
               </p>
             </li>
             <li className="listaCertificado">
-              <img src={x} alt="x"/> 
-              <p>
+              <img className="imgLista" src={x} alt="x"/> 
+              <p className="TextoListaCertificado">
               Mensagens de erro e sucesso apresentadas de forma compreensível para todos os usuários.
               </p>
             </li>
@@ -185,11 +186,11 @@ const Certificacao = () => {
 
     <div className="SolicitarAuditoria">
       <div className="textSolicitar">
-        <h3>Dê o primeiro passo para tornar sua plataforma digital acessível a todos!</h3>
-        <button>
-          <a>
+        <h3 className="tituloTextoSolicitar">Dê o primeiro passo para tornar sua plataforma digital acessível a todos!</h3>
+        <button className="btnSolicitar">
+          <Link className="solicitar" to={""}>
           Solicite uma auditoria!
-          </a>
+          </Link>
         </button>
       </div>
       <img src={imgSolicitarAuditoria} alt="Imagem de uma pessoa cadeirante"/>
