@@ -1,0 +1,96 @@
+.FormCheckGeral {
+  display: flex;
+  gap: 13.3rem;
+  justify-content: space-between;
+  padding: 4rem 1.6rem 10.8rem;
+}
+
+.divTexto-FormCheck {
+  max-width: 69.9rem;
+
+  .Titulo-FormCheck {
+    font-family: var(--font-primary-monserrat);
+    font-weight: 700;
+    font-size: 5rem;
+    color: #0357a0;
+  }
+
+  .Texto-FormCheck {
+    margin-top: 5.2rem;
+    font-family: var(--font-secondary-opensans);
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #1d1d1b;
+  }
+}
+
+.divFormCheck form {
+  background: #57a40a;
+  padding: 5.7rem 2.6rem;
+  border-radius: 3rem;
+
+  .inputs-formchecks {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.4rem;
+  }
+
+  .TituloFormulario {
+    font-family: var(--font-secondary-opensans);
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1d1d1b;
+    text-align: center;
+    margin-bottom: 2.4rem;
+  }
+
+  .label-FormCheck {
+    font-family: var(--font-secondary-opensans);
+    font-size: 2.1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .input-FormCheck {
+    height: 5.1rem;
+    border-radius: 10px;
+    border: none;
+    padding-left: 10px;
+  }
+
+  .divCheckBox-FormCheck {
+    display: flex;
+    gap: 2.4rem;
+    margin-bottom: 2.9rem;
+    align-items: center;
+
+    .labelCheckBox-FormCheck {
+      font-family: var(--font-secondary-opensans);
+      font-weight: 600;
+      font-size: 2.1rem;
+      color: #000000;
+      text-decoration: underline 0.5px;
+      padding-right: 1rem;
+    }
+
+    .input-CheckBox-FormCheck {
+      width: 36px;
+      height: 36px;
+      border: 1px solid #1d1d1b;
+      background: red;
+    }
+  }
+
+  .btn-FormCheck {
+    background: #7503a6;
+    color: #fefefe;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 2.5rem 3.7rem;
+    border: none;
+    border-radius: 10px;
+    display: block;
+    margin: 5.7rem auto 0;
+    cursor: pointer;
+  }
+}
