@@ -1,4 +1,3 @@
-import React from 'react'
 import './style.css'
 import png from '../../assets/beneficios.png'
 import vector from '../../assets/Vector.png'

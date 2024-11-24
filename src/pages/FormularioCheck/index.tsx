@@ -1,7 +1,14 @@
-import React from "react";
 import "./styles.css";
+import { useNavigate } from "react-router-dom";
 
 const FormularioCheckList = () => {
+  const navigate = useNavigate();
+
+  const enviarForm = (e: { preventDefault: () => void }) => {
+    e.preventDefault();
+    alert("Verifique o seu E-mail");
+    navigate("/");
+  };
   return (
     <div className="FormCheckGeral">
       <div className="divTexto-FormCheck">
@@ -28,34 +35,71 @@ const FormularioCheckList = () => {
         </p>
       </div>
       <div className="divFormCheck">
-        <form>
+        <form onSubmit={enviarForm}>
           <h3 className="TituloFormulario">DADOS DA EMPRESA</h3>
 
+          {/* Campo Nome da Empresa */}
           <div className="inputs-formchecks">
-            <label className="label-FormCheck" htmlFor="nome">Nome da Empresa*</label>
-            <input className="input-FormCheck" name="nome" type="text" />
+            <label className="label-FormCheck" htmlFor="nome">
+              Nome da Empresa*
+            </label>
+            <input
+              className="input-FormCheck"
+              name="nome"
+              type="text"
+              pattern="^[a-zA-Zà-úÀ-Ú\s]+$"
+              title="O nome da empresa deve conter apenas letras e espaços"
+              required
+            />
           </div>
 
+          {/* Campo E-mail para Contato */}
           <div className="inputs-formchecks">
-            <label className="label-FormCheck" htmlFor="email">E-mail para Contato*</label>
-            <input className="input-FormCheck" name="email" type="email" />
+            <label className="label-FormCheck" htmlFor="email">
+              E-mail para Contato*
+            </label>
+            <input
+              className="input-FormCheck"
+              name="email"
+              type="email"
+              title="Insira um e-mail válido, como exemplo@dominio.com"
+              required
+            />
           </div>
 
+          {/* Checkbox para aceitar os Termos de Uso */}
           <div className="divCheckBox-FormCheck">
-            <input className="input-CheckBox-FormCheck"  type="checkbox" name="termos"/>
-            <label className="labelCheckBox-FormCheck" htmlFor="termos">Li e aceito os termos de uso.</label>
+            <input
+              className="input-CheckBox-FormCheck"
+              type="checkbox"
+              name="termos"
+              id="termos"
+              required
+            />
+            <label className="labelCheckBox-FormCheck" htmlFor="termos">
+              Li e aceito os termos de uso.
+            </label>
           </div>
 
+          {/* Checkbox para receber e-mails de novidades */}
           <div className="divCheckBox-FormCheck">
-            <input className="input-CheckBox-FormCheck" type="checkbox" name="deacordo"/>
+            <div className="teste">
+              <input
+                className="input-CheckBox-FormCheck"
+                type="checkbox"
+                name="deacordo"
+                id="deacordo"
+              />
+            </div>
             <label className="labelCheckBox-FormCheck" htmlFor="deacordo">
               Concordo em receber e-mails sobre ofertas, novidades e
               atualizações da AccessCertify.
             </label>
           </div>
 
+          {/* Botão para Submeter o Formulário */}
           <button className="btn-FormCheck" type="submit">
-          Receber o resultado!
+            Receber o resultado!
           </button>
         </form>
       </div>

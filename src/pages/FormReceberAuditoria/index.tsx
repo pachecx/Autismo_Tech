@@ -1,8 +1,15 @@
-import React from "react";
 import selo from "../../assets/selo.svg";
 import "./style.css";
+import { useNavigate } from "react-router-dom";
 
 const FormularioReceberAuditoria = () => {
+  const navigate = useNavigate();
+
+  const enviarForm = (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+    alert("Teste");
+    navigate("/");
+  };
   return (
     <div className="SerAuditadoGeral">
       <div className="textoReceberAuditoria">
@@ -27,55 +34,125 @@ const FormularioReceberAuditoria = () => {
       </div>
 
       <div className="geralFormSerAuditado">
-        <form className="formSerAuditado">
+        <form onSubmit={enviarForm} className="formSerAuditado">
           <h3 className="TituloformSerAuditado">DADOS DA EMPRESA</h3>
+
           <div className="divInputsSerAuditado">
             <label className="LabelSerAuditado" htmlFor="cnpj">
               CNPJ*
             </label>
-            <input className="inputSerAuditado" type="text" name="cnpj" />
+            {/* Regex para CNPJ (formato 00.000.000/0000-00 ou apenas números) */}
+            <input
+              className="inputSerAuditado"
+              type="text"
+              name="cnpj"
+              pattern="\d{2}\.\d{3}\.\d{3}/\d{4}-\d{2}|\d{14}"
+              title="Insira um CNPJ válido no formato 00.000.000/0000-00 ou apenas números"
+              required
+            />
           </div>
+
           <div className="divInputsSerAuditado">
             <label className="LabelSerAuditado" htmlFor="razao">
               Razão Social*
             </label>
-            <input className="inputSerAuditado" type="text" name="razao" />
+            {/* Regex para texto genérico (alfa e espaços) */}
+            <input
+              className="inputSerAuditado"
+              type="text"
+              name="razao"
+              pattern="^[a-zA-Zà-úÀ-Ú\s]+$"
+              title="Insira a razão social apenas com letras e espaços"
+              required
+            />
           </div>
+
           <div className="divInputsSerAuditado">
             <label className="LabelSerAuditado" htmlFor="plataforma">
               Tipo de Plataforma*
             </label>
-            <input className="inputSerAuditado" type="text" name="plataforma" />
+            {/* Regex para texto genérico (alfa e espaços) */}
+            <input
+              className="inputSerAuditado"
+              type="text"
+              name="plataforma"
+              pattern="^[a-zA-Zà-úÀ-Ú\s]+$"
+              title="Informe o tipo de plataforma apenas com letras e espaços"
+              required
+            />
           </div>
+
           <div className="divInputsSerAuditado">
             <label className="LabelSerAuditado" htmlFor="nome">
               Nome Completo*
             </label>
-            <input className="inputSerAuditado" type="text" name="nome" />
+            {/* Regex para nome completo (mínimo duas palavras) */}
+            <input
+              className="inputSerAuditado"
+              type="text"
+              name="nome"
+              pattern="^[a-zA-Zà-úÀ-Ú\s]+$"
+              title="Insira seu nome completo, com pelo menos duas palavras"
+              required
+            />
           </div>
+
           <div className="divInputsSerAuditado">
             <label className="LabelSerAuditado" htmlFor="email">
               E-mail para Contato*
             </label>
-            <input className="inputSerAuditado" type="text" name="email" />
+            {/* Regex para e-mail */}
+            <input
+              className="inputSerAuditado"
+              type="email"
+              name="email"
+              title="Insira um e-mail válido, como exemplo@dominio.com"
+              required
+            />
           </div>
+
           <div className="divInputsSerAuditado">
             <label className="LabelSerAuditado" htmlFor="telefone">
               Telefone para Contato*
             </label>
-            <input className="inputSerAuditado" type="text" name="telefone" />
+            {/* Regex para telefone (formato (XX) XXXXX-XXXX ou similar) */}
+            <input
+              className="inputSerAuditado"
+              type="tel"
+              name="telefone"
+              pattern="\(?\d{2}\)?\s?\d{4,5}-\d{4}"
+              title="Insira um número de telefone válido no formato (XX) XXXXX-XXXX"
+              required
+            />
           </div>
+
           <div className="divInputsSerAuditado">
             <label className="LabelSerAuditado" htmlFor="setor">
               Setor de Atuação*
             </label>
-            <input className="inputSerAuditado" type="text" name="setor" />
+            {/* Regex para texto genérico (alfa e espaços) */}
+            <input
+              className="inputSerAuditado"
+              type="text"
+              name="setor"
+              pattern="^[a-zA-Zà-úÀ-Ú\s]+$"
+              title="Informe o setor de atuação apenas com letras e espaços"
+              required
+            />
           </div>
+
           <div className="divInputsSerAuditado">
             <label className="LabelSerAuditado" htmlFor="objetivos">
               Objetivos da Auditoria
             </label>
-            <input className="inputSerAuditado" type="text" name="objetivos" />
+            {/* Regex para texto genérico (alfa e espaços), para os objetivos */}
+            <input
+              className="inputSerAuditado"
+              type="text"
+              name="objetivos"
+              pattern="^[a-zA-Zà-úÀ-Ú\s]+$"
+              title="Descreva os objetivos da auditoria, apenas com letras e espaços"
+            />
           </div>
 
           <button className="BtnSerAuditado" type="submit">

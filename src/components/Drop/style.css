@@ -5,6 +5,8 @@
   font-family: Arial, sans-serif;
   overflow: hidden;
   background-color: #0357a0;
+  min-height: 9rem;
+  padding-top: 1rem;
 }
 
 .dropdown-header {

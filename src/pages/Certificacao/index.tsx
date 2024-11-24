@@ -1,4 +1,3 @@
-import React from "react";
 import line1 from "../../assets/certificacao/Line.svg";
 import line2 from "../../assets/certificacao/Line2.svg";
 import imgClound from "../../assets/certificacao/Cloudhosting-cuate.svg";
@@ -10,9 +9,14 @@ import imgCertificado from '../../assets/certificacao/certificadoCorrigido.png'
 import imgSolicitarAuditoria from '../../assets/certificacao/Frame.svg'
 import x from '../../assets/certificacao/x.svg'
 import "./style.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Certificacao = () => {
+  const navigate = useNavigate();
+
+  const auditoria = () => {
+    navigate("/formularioReceberAuditoria");
+  };
   return (
     <>
       <header className="headerCertificacao">
@@ -187,7 +191,7 @@ const Certificacao = () => {
     <div className="SolicitarAuditoria">
       <div className="textSolicitar">
         <h3 className="tituloTextoSolicitar">Dê o primeiro passo para tornar sua plataforma digital acessível a todos!</h3>
-        <button className="btnSolicitar">
+        <button onClick={auditoria} className="btnSolicitar">
           <Link className="solicitar" to={""}>
           Solicite uma auditoria!
           </Link>

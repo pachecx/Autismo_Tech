@@ -1,4 +1,3 @@
-import React from "react";
 import imgQuebraFooter from '../../assets/footer/imgFooterQuebra.svg'
 import insta from '../../assets/footer/insta.svg'
 import face from '../../assets/footer/face.svg'

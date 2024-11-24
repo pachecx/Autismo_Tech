@@ -12,6 +12,7 @@
   }
 
   .TextoHeaderCheck {
+    margin-top: 1.6rem;
     font-family: var(--font-secondary-opensans);
     font-weight: 400;
     font-size: 2.5rem;

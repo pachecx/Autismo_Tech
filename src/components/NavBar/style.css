@@ -1,26 +1,32 @@
-.divNav{
-    background: #0357A0;
+.divNav {
+    background: #0357a0;
     display: flex;
     align-items: center;
     padding: 2.6rem 6rem;
     gap: 2.2rem;
-    
-    
-}
-
-nav ul{
+    box-shadow: 0px 0px 10px 5px #000000;
+  }
+  
+  nav ul {
     display: flex;
-    gap: 5.5rem;    
+    gap: 5.5rem;
     list-style: none;
-   
-   
-
-    a{
-        font-family: var(--font-primary-monserrat);
-        font-weight: 500;
-        font-size: 3.2rem;
-        color: #FEFEFE;
-        text-decoration: none;
-        list-style: none;
+  
+    a {
+      font-family: var(--font-primary-monserrat);
+      font-weight: 500;
+      font-size: 3.2rem;
+      color: #fefefe;
+      text-decoration: none;
+      list-style: none;
+      white-space: nowrap;
     }
-}
+  }
+  
+  .active {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    text-underline-offset: 2px;
+  }
+  
