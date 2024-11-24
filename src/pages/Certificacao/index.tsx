@@ -1,4 +1,3 @@
-import React from "react";
 import line1 from "../../assets/certificacao/Line.svg";
 import line2 from "../../assets/certificacao/Line2.svg";
 import imgClound from "../../assets/certificacao/Cloudhosting-cuate.svg";

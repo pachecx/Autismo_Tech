@@ -1,4 +1,3 @@
-import React from 'react';
 import './style.css';
 import png from '../../assets/Group 2.png';
 import frame1 from '../../assets/Frame 3.png';

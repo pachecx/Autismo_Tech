@@ -1,4 +1,3 @@
-import React from "react";
 import selo from "../../assets/selo.svg";
 import "./style.css";
 import { useNavigate } from "react-router-dom";
