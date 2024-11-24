@@ -87,6 +87,10 @@
   background-color: #0357a0;
   border-radius: 10px;
 }
+.divicone{
+  display: flex;
+  justify-content: center;
+}
 .icone {
   margin: auto;
   padding-top: 4rem;

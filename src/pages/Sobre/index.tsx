@@ -8,7 +8,7 @@ const Sobre = () => {
   return (
     <div className='con'>
       <div className='cointainerp'>
-       <p className='psobre'>Inclusão digital: conectando pessoas para um ambiente digital mais acessível e justo</p>
+       <p className='psobre'>Acessibilidade digital: conectando pessoas para um ambiente digital mais inclusivo e justo</p>
       </div>
       <div className='containersecundario'>
         <div className='texto1'>Acreditamos que a acessibilidade digital é essencial para construir um mundo mais inclusivo e justo. Estamos aqui para transformar a web, garantindo que plataformas digitais de bancos e redes sociais sejam acessíveis a todos.

@@ -11,6 +11,7 @@ import FormularioCheckList from "./pages/FormularioCheck/index.tsx";
 import Beneficios from "./pages/beneficios/index.tsx";
 import FormularioReceberAuditoria from "./pages/FormReceberAuditoria/index.tsx";
 import SerAuditor from "./pages/SerAuditor/index.tsx";
+import Selo from "./pages/selo/index.tsx";
 import InscricaoSelo from "./pages/InscricaoSelo/index.tsx";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -58,6 +59,10 @@ const router = createBrowserRouter([
       {
         path: "/inscricaoSelo",
         element: <InscricaoSelo />,
+      },
+      {
+        path: "/selo",
+        element: <Selo />,
       },
     ],
   },

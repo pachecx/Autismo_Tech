@@ -46,22 +46,22 @@ const Beneficios = () => {
             <h1 className='tituloaccess'>Porque escolher a AccessCertify ?</h1>
             <div className='divscards'>
                 <div className='divcard'>
-                    <img className='icone' src={vector} alt="" />
+                    <div className='divicone'><img className='icone' src={vector} alt="" /></div>
                     <p className='accessmedio'>Melhoria de acessibilidade</p>
                     <p className='accesspequeno'>Alcance ampliado para todos os usuários, garantindo que sua plataforma digital seja funcional e inclusiva para pessoas com deficiência (PCDs).</p>
                 </div>
                 <div className='divcard'>
-                    <img className='icone' src={vector} alt="" />
+                    <div className='divicone'><img className='icone' src={vector} alt="" /></div>
                     <p className='accessmedio'>Conformidade legal</p>
                     <p className='accesspequeno'>Evite multas e processos ao atender às regulamentações de acessibilidade digital, como as diretrizes WCAG e leis locais.</p>
                 </div>
                 <div className='divcard'>
-                    <img className='icone' src={vector} alt="" />
+                    <div className='divicone'><img className='icone' src={vector} alt="" /></div>
                     <p className='accessmedio'>Inclusão e diversidade</p>
                     <p className='accesspequeno'>Reforce sua marca ao integrar práticas inclusivas e promover a participação de PCDs. Isso gera confiança e engajamento com todos os públicos.</p>
                 </div>
                 <div className='divcard'>
-                    <img className='icone' src={vector} alt="" />
+                    <div className='divicone'><img className='icone' src={vector} alt="" /></div>
                     <p className='accessmedio'>Vantagem competitiva</p>
                     <p className='accesspequeno'>Fidelize clientes, amplie sua base de usuários e mostre compromisso com o impacto social positivo. Um diferencial que destaca sua empresa no mercado.</p>
                 </div>
