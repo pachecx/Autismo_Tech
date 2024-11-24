@@ -2,8 +2,15 @@ import './style.css'
 import png from '../../assets/beneficios.png'
 import vector from '../../assets/Vector.png'
 import png2 from '../../assets/disabled student-pana 1.png'
+import { useNavigate } from 'react-router-dom'
 
 const Beneficios = () => {
+    const navigate = useNavigate()
+
+    const serAuditor = () => {
+        navigate('/serAuditor')
+    }
+
   return (
     <div>
         <div className='header'>
@@ -70,7 +77,7 @@ const Beneficios = () => {
             <div className='ultimadiv'>
                 <div>
                     <p className='ultimep'>Saiba como a acessibilidade pode transformar seu negócio</p>
-                    <button className='ultimobut'>Solicite uma auditoria!</button>
+                    <button onClick={serAuditor} className='ultimobut'>Solicite uma auditoria!</button>
                 </div>
                 <div>
                     <img className='ultimoimg' src={png2} alt="" />

@@ -8,8 +8,13 @@ import auditor2 from '../../assets/auditor3.2.png';
 import auditor3 from '../../assets/auditor4.2.png';
 import auditor4 from '../../assets/auditorespecial.png';
 import auditor5 from '../../assets/Group 3.png'
+import { useNavigate } from 'react-router-dom';
 
 const Auditores = () => {
+const navigate = useNavigate()
+  const serAud = () => {
+    navigate('/serAuditor')
+  }
   return (
     <div className="container-principal">
       {/* Título e Introdução */}
@@ -80,7 +85,7 @@ const Auditores = () => {
       <div className='divfazer'>
         <div className=''>
             <p className='pfazer'>Quer fazer parte da nossa equipe de consultores?</p>
-            <button className='butfazer'>Seja um auditor!</button>
+            <button onClick={serAud} className='butfazer'>Seja um auditor!</button>
         </div>
         <div>
             <img src={auditor5} alt="" />
