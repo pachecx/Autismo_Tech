@@ -4,12 +4,15 @@
     align-items: center;
     padding: 2.6rem 6rem;
     gap: 2.2rem;
+    
 }
 
 nav ul{
     display: flex;
-    gap: 2.2rem;    
+    gap: 5.5rem;    
     list-style: none;
+   
+   
 
     a{
         font-family: var(--font-primary-monserrat);
