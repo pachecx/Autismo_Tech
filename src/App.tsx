@@ -4,9 +4,23 @@ import img1 from "./assets/Checklist-1.svg";
 import img2 from "./assets/extraction-cuate.svg";
 import img3 from "./assets/world-cuate.svg";
 import Dropdown from "./components/Drop";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 function App() {
+  const navigate = useNavigate();
+
+  const check = () => {
+    navigate("/checklist");
+  };
+
+  const auditoria = () => {
+    navigate("/formularioReceberAuditoria");
+  };
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Isso vai levar a página ao topo assim que ela for carregada
+  }, []);
   return (
     <>
       <header>
@@ -24,11 +38,15 @@ function App() {
         </div>
 
         <div className="headerBtns">
-          <button className="btnSolicitarHome">
-            <Link className="linkHomeHeader" to={""}>Solicite uma auditoria!</Link>
+          <button onClick={auditoria} className="btnSolicitarHome">
+            <Link className="linkHomeHeader" to={""}>
+              Solicite uma auditoria!
+            </Link>
           </button>
-          <button className="btnCheckHome">
-            <Link className="linkHomeHeader" to={""}>Checklist Gratuito</Link>
+          <button onClick={check} className="btnCheckHome">
+            <Link className="linkHomeHeader" to={""}>
+              Checklist Gratuito
+            </Link>
           </button>
         </div>
       </header>
@@ -51,7 +69,7 @@ function App() {
             </div>
 
             <div className="divVisao">
-              <h3  className="TitleDiretrizes">Visão</h3>
+              <h3 className="TitleDiretrizes">Visão</h3>
               <p className="textoDiretrizes">
                 Ser uma referência global em acessibilidade digital, promovendo
                 mudanças significativas que impactem positivamente a vida de
@@ -80,14 +98,18 @@ function App() {
           <div className="tresdivs">
             <div className="divUm">
               <img className="imgDife" src={img1} />
-              <p className="TextoDif">Auditorias detalhadas e baseadas em padrões como WCAG.</p>
+              <p className="TextoDif">
+                Auditorias detalhadas e baseadas em padrões como WCAG.
+              </p>
             </div>
             <div className="divDois">
-              <img className="imgDife"  src={img3} />
-              <p className="TextoDif">Envolvimento direto de consultores PCDs.</p>
+              <img className="imgDife" src={img3} />
+              <p className="TextoDif">
+                Envolvimento direto de consultores PCDs.
+              </p>
             </div>
             <div className="divTres">
-              <img className="imgDife"  src={img2} />
+              <img className="imgDife" src={img2} />
               <p className="TextoDif">Relatórios claros e planos de ação.</p>
             </div>
           </div>

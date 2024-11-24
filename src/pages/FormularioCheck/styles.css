@@ -56,6 +56,11 @@
     border-radius: 10px;
     border: none;
     padding-left: 10px;
+    border: 2px solid #0357a0;
+
+    font-family: var(--font-secondary-opensans);
+    font-weight: 500;
+    font-size: 1.6rem;
   }
 
   .divCheckBox-FormCheck {
@@ -63,6 +68,9 @@
     gap: 2.4rem;
     margin-bottom: 2.9rem;
     align-items: center;
+
+    .teste {
+    }
 
     .labelCheckBox-FormCheck {
       font-family: var(--font-secondary-opensans);
@@ -76,8 +84,7 @@
     .input-CheckBox-FormCheck {
       width: 36px;
       height: 36px;
-      border: 1px solid #1d1d1b;
-      background: red;
+      border: 2px solid #1d1d1b;
     }
   }
 
