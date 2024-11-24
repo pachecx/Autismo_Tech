@@ -30,7 +30,7 @@ const NavBar = () => {
           </Link>
         </li>
         <li>
-          <Link to={''}>
+          <Link to={'/selo'}>
           Selo
           </Link>
         </li>

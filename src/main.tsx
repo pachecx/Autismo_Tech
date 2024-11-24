@@ -11,6 +11,7 @@ import FormularioCheckList from './pages/FormularioCheck/index.tsx'
 import Beneficios from './pages/beneficios/index.tsx'
 import FormularioReceberAuditoria from './pages/FormReceberAuditoria/index.tsx'
 import SerAuditor from './pages/SerAuditor/index.tsx'
+import Selo from './pages/selo/index.tsx'
 
 import {
   createBrowserRouter,
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
       {
         path: "/serAuditor",
         element: <SerAuditor/>,
+      },
+      {
+        path: "/selo",
+        element: <Selo />
       },
     ]
   }
