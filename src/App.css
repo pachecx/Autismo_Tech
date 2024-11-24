@@ -22,7 +22,7 @@ header {
   }
 
   .headerBtns {
-    margin-top: 4.4rem;
+    margin: 4.4rem 0 9.6rem;
     display: flex;
     gap: 1rem;
     justify-content: center;
@@ -31,6 +31,8 @@ header {
       cursor: pointer;
       max-width: 45.9rem;
       border-radius: 10px;
+      background: transparent;
+
       a {
         font-size: 3rem;
         font-family: var(--font-primary-monserrat);
@@ -164,10 +166,8 @@ main {
     .divDrops {
       margin-top: 5.8rem;
       display: flex;
-      gap: 4.9rem;
-      /* display: grid;
-      grid-template-columns: 1fr 1fr;
-      row-gap: 3.2rem; */
+      gap: 4.5rem;
+      justify-content: center;
       margin-bottom: 12.7rem;
 
       .campo1 {

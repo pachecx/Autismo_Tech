@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import checkHeader from "../../assets/checklist/check.svg";
 import "./style.css";
+import { useNavigate } from "react-router-dom";
 
 const CheckList = () => {
+  const navigate = useNavigate();
+
+  const formCheck = () => {
+    navigate("/FormularioCheckList");
+  };
+
+  const enviarForm = (e: { preventDefault: () => void; }) => {
+    e.preventDefault();
+    formCheck();
+  };
   return (
     <div>
       <div className="HeaderCheck">
@@ -41,7 +52,7 @@ const CheckList = () => {
         </p>
       </div>
 
-      <form>
+      <form onSubmit={enviarForm}>
         <div className="Nav-Check-Vermelho">
           <p className="titulo-Checklist-vermelho">
             Navegação: Todas as funcionalidades estejam acessíveis e sejam
@@ -52,110 +63,162 @@ const CheckList = () => {
               Todos os links da sua plataforma possuem descrições claras?
             </p>
             <div className="options">
-              <label className="LabelInput"><input type="radio" name="descricao" />Sim</label>
-              <label className="LabelInput"><input type="radio" name="descricao" />Não</label>
+              <label className="LabelInput">
+                <input type="radio" name="descricao" />
+                Sim
+              </label>
+              <label className="LabelInput">
+                <input required type="radio" name="descricao" />
+                Não
+              </label>
             </div>
           </div>
 
           <div className="divInputs">
             <p className="TextoInputForm">
-            Os menus são acessíveis usando apenas o teclado?
+              Os menus são acessíveis usando apenas o teclado?
             </p>
             <div className="options">
-              <label className="LabelInput"><input type="radio" name="teclado" />Sim</label>
-              <label className="LabelInput"><input type="radio" name="teclado" />Não</label>
+              <label className="LabelInput">
+                <input type="radio" name="teclado" />
+                Sim
+              </label>
+              <label className="LabelInput">
+                <input required type="radio" name="teclado" />
+                Não
+              </label>
             </div>
           </div>
 
           <div className="divInputs">
             <p className="TextoInputForm">
-            Os elementos interativos são destacados ao receber foco?
+              Os elementos interativos são destacados ao receber foco?
             </p>
             <div className="options">
-              <label className="LabelInput"><input type="radio" name="destacados" />Sim</label>
-              <label className="LabelInput"><input type="radio" name="destacados" />Não</label>
+              <label className="LabelInput">
+                <input type="radio" name="destacados" />
+                Sim
+              </label>
+              <label className="LabelInput">
+                <input required type="radio" name="destacados" />
+                Não
+              </label>
             </div>
           </div>
-          
         </div>
-
-
 
         <div className="Nav-Check-roxo">
           <p className="titulo-Checklist-roxo">
-          Legibilidade: Contraste, tamanho de fonte e clareza do texto para facilitação da leitura
+            Legibilidade: Contraste, tamanho de fonte e clareza do texto para
+            facilitação da leitura
           </p>
           <div className="divInputs">
             <p className="TextoInputForm">
-            O contraste entre texto e fundo atende aos padrões (4.5:1 para texto normal)?
+              O contraste entre texto e fundo atende aos padrões (4.5:1 para
+              texto normal)?
             </p>
             <div className="options">
-              <label className="LabelInput"><input type="radio" name="descricao" />Sim</label>
-              <label className="LabelInput"><input type="radio" name="descricao" />Não</label>
+              <label className="LabelInput">
+                <input required type="radio" name="contraste" />
+                Sim
+              </label>
+              <label className="LabelInput">
+                <input type="radio" name="contraste" />
+                Não
+              </label>
             </div>
           </div>
 
           <div className="divInputs">
             <p className="TextoInputForm">
-            As fontes utilizadas são claras e legíveis para todos os usuários?
+              As fontes utilizadas são claras e legíveis para todos os usuários?
             </p>
             <div className="options">
-              <label className="LabelInput"><input type="radio" name="teclado" />Sim</label>
-              <label className="LabelInput"><input type="radio" name="teclado" />Não</label>
+              <label className="LabelInput">
+                <input type="radio" name="fontesClaras" />
+                Sim
+              </label>
+              <label className="LabelInput">
+                <input required type="radio" name="fontesClaras" />
+                Não
+              </label>
             </div>
           </div>
 
           <div className="divInputs">
             <p className="TextoInputForm">
-            O conteúdo da sua plataforma está estruturado com cabeçalhos apropriados?
+              O conteúdo da sua plataforma está estruturado com cabeçalhos
+              apropriados?
             </p>
             <div className="options">
-              <label className="LabelInput"><input type="radio" name="destacados" />Sim</label>
-              <label className="LabelInput"><input type="radio" name="destacados" />Não</label>
+              <label className="LabelInput">
+                <input type="radio" name="cabecalho" />
+                Sim
+              </label>
+              <label className="LabelInput">
+                <input required type="radio" name="cabecalho" />
+                Não
+              </label>
             </div>
           </div>
-          
         </div>
-
 
         <div className="Nav-Check-azul">
           <p className="titulo-Checklist-azul">
-          Compatibilidade: Leitores de tela e descrições alternativas em imagens e elementos não textuais.
+            Compatibilidade: Leitores de tela e descrições alternativas em
+            imagens e elementos não textuais.
           </p>
           <div className="divInputs">
             <p className="TextoInputForm">
-            Todos os botões possuem rótulos (alt text) claros e descritivos?
+              Todos os botões possuem rótulos (alt text) claros e descritivos?
             </p>
             <div className="options">
-              <label className="LabelInput"><input type="radio" name="descricao" />Sim</label>
-              <label className="LabelInput"><input type="radio" name="descricao" />Não</label>
+              <label className="LabelInput">
+                <input type="radio" name="rotulosClaros" />
+                Sim
+              </label>
+              <label className="LabelInput">
+                <input required type="radio" name="rotulosClaros" />
+                Não
+              </label>
             </div>
           </div>
 
           <div className="divInputs">
             <p className="TextoInputForm">
-            Sua plataforma foi testada com leitores de tela?
+              Sua plataforma foi testada com leitores de tela?
             </p>
             <div className="options">
-              <label className="LabelInput"><input type="radio" name="teclado" />Sim</label>
-              <label className="LabelInput"><input type="radio" name="teclado" />Não</label>
+              <label className="LabelInput">
+                <input type="radio" name="leitorTela" />
+                Sim
+              </label>
+              <label className="LabelInput">
+                <input required type="radio" name="leitorTela" />
+                Não
+              </label>
             </div>
           </div>
 
           <div className="divInputs">
             <p className="TextoInputForm">
-            Os vídeos possuem legendas ou transcrição disponíveis?
+              Os vídeos possuem legendas ou transcrição disponíveis?
             </p>
             <div className="options">
-              <label className="LabelInput"><input type="radio" name="destacados" />Sim</label>
-              <label className="LabelInput"><input type="radio" name="destacados" />Não</label>
+              <label className="LabelInput">
+                <input required type="radio" name="transcricao" />
+                Sim
+              </label>
+              <label className="LabelInput">
+                <input required type="radio" name="transcricao" />
+                Não
+              </label>
             </div>
           </div>
-          
         </div>
 
         <button className="btnSubmit" type="submit">
-        Enviar respostas
+          Enviar respostas
         </button>
       </form>
     </div>
