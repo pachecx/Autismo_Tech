@@ -31,15 +31,18 @@
   font-size: 3rem;
   font-weight: 600;
   line-height: 3rem;
-  background-color: #0357a0;
-  border: 0.1rem solid #0357a0;
+  background-color: #7503A6;
+  border: 0.1rem solid #7503A6;
   color: white;
   margin-left: 1.6rem;
   margin-top: 2.8rem;
   margin-bottom: 13.5rem;
+  cursor: pointer;
 }
 .seloimg {
   margin-left: -70rem;
+ position: relative;
+  z-index: -1;
 }
 .divcentral {
   height: 35.8rem;
