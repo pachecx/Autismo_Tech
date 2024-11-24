@@ -14,6 +14,7 @@ header {
       }
 
       .TextoHome {
+        margin-top: 1.6rem;
         font-size: 2.5rem;
         font-family: var(--font-secondary-opensans);
         font-weight: 400;

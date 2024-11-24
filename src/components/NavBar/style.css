@@ -1,25 +1,30 @@
-.divNav{
-    background: #0357A0;
-    display: flex;
-    align-items: center;
-    padding: 2.6rem 6rem;
-    gap: 2.2rem;
-    
+.divNav {
+  background: #0357a0;
+  display: flex;
+  align-items: center;
+  padding: 2.6rem 6rem;
+  gap: 2.2rem;
 }
 
-nav ul{
-    display: flex;
-    gap: 5.5rem;    
-    list-style: none;
-   
-   
+nav ul {
+  display: flex;
+  gap: 5.5rem;
+  list-style: none;
 
-    a{
-        font-family: var(--font-primary-monserrat);
-        font-weight: 500;
-        font-size: 3.2rem;
-        color: #FEFEFE;
-        text-decoration: none;
-        list-style: none;
-    }
+  a {
+    font-family: var(--font-primary-monserrat);
+    font-weight: 500;
+    font-size: 3.2rem;
+    color: #fefefe;
+    text-decoration: none;
+    list-style: none;
+    white-space: nowrap;
+  }
+}
+
+.active {
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+  text-underline-offset: 2px;
 }
