@@ -7,6 +7,12 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
+.btn-nav-toHome{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 nav ul {
   display: flex;
   gap: 5.5rem;
