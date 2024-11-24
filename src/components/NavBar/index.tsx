@@ -1,15 +1,22 @@
 import './style.css'
-import { Link, useLocation } from 'react-router-dom'
+import { Link, useLocation, useNavigate } from 'react-router-dom'
 import imgLogoNav from '../../assets/logoNav.svg'
 
 const NavBar = () => {
   const location = useLocation();
+  const navigate = useNavigate()
 
   const isActive = (path: string) => location.pathname === path;
 
+  const toHome = () => {
+    navigate('/')
+  }
+
   return (
     <div className='divNav'>
+      <button onClick={toHome} className='btn-nav-toHome'>
       <img src={imgLogoNav} alt='logo barra da barra de navegação'/>
+      </button>
     <nav>
       <ul>
       <li className={isActive('/') ? 'active' : ''}>
