@@ -1,4 +1,3 @@
-import React from 'react'
 import './style.css'
 import png from "../../assets/teste.png"
 import png2 from "../../assets/Webinar-pana 1.png"

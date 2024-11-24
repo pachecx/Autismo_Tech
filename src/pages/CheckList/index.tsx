@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import checkHeader from "../../assets/checklist/check.svg";
 import "./style.css";
 import { useNavigate } from "react-router-dom";

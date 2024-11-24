@@ -1,4 +1,3 @@
-import React from 'react'
 import './style.css'
 import png from '../../assets/iPhone 15 Pro.png'
 import verificar from '../../assets/verificar.png'
