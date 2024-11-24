@@ -1,15 +1,22 @@
 import './style.css'
 import png from '../../assets/iPhone 15 Pro.png'
 import verificar from '../../assets/verificar.png'
+import { useNavigate } from 'react-router-dom'
 
 const Selo = () => {
+
+    const navigate = useNavigate()
+   
+    function enviar() {
+        navigate('/inscricaoSelo')
+    }
   return (
     <div>
         <div className='divselo'>
             <div>
                 <h1 className='tituloselo'>Quebre barreiras digitais: torne seu site acessível para todos!</h1>
                 <p className='pselo'>Um serviço de assinatura exclusivo para sua empresa se conectar com o universo da inclusão digital.</p>
-                <button className='butselo'>Solicite seu selo!</button>
+                <button className='butselo' onClick={enviar}>Solicite seu selo!</button>
             </div>
             <div className='divimg'>
                 <img className='seloimg' src={png} alt="" />

@@ -37,6 +37,7 @@
     font-family: var(--font-primary-monserrat);
     font-size: 5rem;
     margin: 3rem 0;
+    margin-bottom: 6re;
   }
   
   /* Parágrafos */
@@ -91,7 +92,7 @@
   .div-auditor {
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 10rem;
     flex-wrap: wrap;
     margin-bottom: 6rem;
   }
