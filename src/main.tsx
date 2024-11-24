@@ -9,6 +9,7 @@ import Auditores from './pages/auditores/index.tsx'
 import CheckList from './pages/CheckList/index.tsx'
 import FormularioCheckList from './pages/FormularioCheck/index.tsx'
 import Beneficios from './pages/beneficios/index.tsx'
+import Selo from './pages/selo/index.tsx'
 
 import {
   createBrowserRouter,
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
       {
         path: "/beneficios",
         element: <Beneficios />
+      },
+      {
+        path: "/selo",
+        element: <Selo />
       },
     ]
   }
