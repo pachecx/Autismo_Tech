@@ -1,6 +1,7 @@
 .headerCertificacao {
   background: #0357a0;
   padding-bottom: 6.8rem;
+  box-shadow: inset 0px 3px 8px rgba(0, 0, 0, 0.24);
   .divHead {
     display: flex;
     align-items: center;
