@@ -2,8 +2,14 @@ import './style.css'
 import png from "../../assets/teste.png"
 import png2 from "../../assets/Webinar-pana 1.png"
 import png3 from "../../assets/Modern life-rafiki 1.png"
+import { useNavigate } from 'react-router-dom'
 
 const Sobre = () => {
+  const navigate = useNavigate()
+
+  const venhaFazer = () => {
+    navigate('/formularioReceberAuditoria')
+  }
   return (
     <div className='con'>
       <div className='cointainerp'>
@@ -39,7 +45,7 @@ const Sobre = () => {
             <p className='textobutao'>Venha fazer parte dessa transformação!</p>
         </div>
         <div className='containerbutao'>
-            <button className='butao'>Solicite uma auditoria!</button>
+            <button onClick={venhaFazer} className='butao'>Solicite uma auditoria!</button>
         </div>
       </div>
     </div>
