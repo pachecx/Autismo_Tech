@@ -156,6 +156,7 @@
   line-height: 3rem;
   color: white;
   border: 0.1rem solid #7503a6;
+  cursor: pointer;
 }
 
 .ultima {
