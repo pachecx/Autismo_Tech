@@ -1,50 +1,24 @@
-# React + TypeScript + Vite
+# AccessCertify - Plataforma de Certificação de Acessibilidade Digital
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositório contém o código-fonte do AccessCertify, uma plataforma inovadora desenvolvida para promover a acessibilidade digital, certificando empresas que adotam práticas inclusivas em seus aplicativos e sites.
 
-Currently, two official plugins are available:
+## 🛠️ Tecnologias Utilizadas <br>
+React: Framework para construção de interfaces modernas e interativas.
+TypeScript: Adiciona tipagem estática ao JavaScript, garantindo maior segurança e escalabilidade no desenvolvimento.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Detalhes do Desenvolvimento <br>
+Versão Desktop: Devido à limitação de tempo disponível, esta versão foi projetada exclusivamente para dispositivos desktop.
+Foco Inicial: Aplicativos de entretenimento e bancos, com potencial para expansão futura.
 
-## Expanding the ESLint configuration
+## 🌟 Sobre o Projeto <br>
+AccessCertify é mais do que uma plataforma: é um movimento pela inclusão digital, composto 100% por pessoas PCDs e com um compromisso genuíno com a diversidade.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 📌 Links Úteis
+Confira os detalhes completos do projeto nos links abaixo:
 
-- Configure the top-level `parserOptions` property like this:
+- [Vídeo Pitch](https://www.youtube.com/watch?v=O5bNcUWzpL8)  
+- [Pitch Deck](https://drive.google.com/file/d/1kq-Lp1zvmQzI_5g3rhlTFBUb5jE6lj5g/view)  
+- [Site](https://autismo-tech.vercel.app/)  
+- [Protótipo](https://www.figma.com/proto/1i0ClmY3VY595h95PKD2Xd/AccessCertify---HACKATHON?page-id=43%3A39&node-id=96-252&node-type=frame&viewport=271%2C373%2C0.06&t=5drdMdCfglpNUKS5-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=189%3A5600)  
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
